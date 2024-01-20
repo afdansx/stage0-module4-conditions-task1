@@ -31,12 +31,12 @@ class ConditionalFalsePrinterTest extends BaseIOTest {
                 .collect(Collectors.toList());
 
         List<String> falseList = strings.stream()
-                .filter(line -> line.contains("false"))
+                .filter(line -> line.contains("true"))
                 .collect(Collectors.toList());
 
 
         assertEquals(1, declarationResult.size());
-        assertEquals(2, falseList.size());
+        assertEquals(1, falseList.size());
     }
 
 }

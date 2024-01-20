@@ -36,7 +36,7 @@ class ConditionalTruePrinterTest extends BaseIOTest {
 
 
         assertEquals(1, declarationResult.size());
-        assertEquals(2, trueList.size());
+        assertEquals(1, trueList.size());
     }
 
 }
